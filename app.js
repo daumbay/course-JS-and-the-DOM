@@ -1,7 +1,5 @@
-const heading = document.querySelector("h1");
-document.addEventListener('mouseover', function() {
-    heading.textContent = "Build an AR App";
+const heading = document.querySelector("#contain-all");
+document.addEventListener("keypress", function() {
+    console.log("Removing a child element");
+    heading.firstElementChild.remove();
 });
-document.addEventListener('mouseout', function() {
-    heading.textContent = "Learn ARKit";
-})
